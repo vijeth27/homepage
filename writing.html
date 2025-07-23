@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Homepage - Vijeth Hebbar</title>
+  <title>Interesting writings</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -42,9 +42,6 @@
           <li class="nav-item">
             <a class="nav-link" href="writing.html">Write Ups</a>
           </li>
-<!--           <li class="nav-item">
-            <a class="nav-link" href="#news">News</a>
-          </li> -->
         </ul>
       </div>
     </div>
@@ -64,35 +61,40 @@
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-2">
           <div class="p-5">
-            <img class="img-fluid rounded-circle" src="img/Headshot.jpg" alt="">
+            <img class="img-fluid" src="img/rewards_learning.gif" alt="">
+            Rewards learnt using realized trajectories of agent implementing optimal policy.
           </div>
         </div>
         <div class="col-lg-6 order-lg-1">
           <div class="p-5">
-            <h3 class="display-4">About me</h3>
-            <p>I am currently a graduate student, pursuing a master's degree in the <a href='https://aerospace.illinois.edu/'>Aerospace Engineering Department</a> at University of Illinois-Urbana Champaign. I am advised by <a href='https://csl.illinois.edu/directory/profile/langbort'>Prof. Cedric Langbort</a>. I am currently a research assistant at <a href='https://csl.illinois.edu/'>Coordinated Science Laboratory</a>. I completed my undergraduate education in the Aerospace Engineering Department at <a href='www.iitb.ac.in'>IIT Bombay</a>. </p>
-            <p> To know more about me, you can find my resume <a href='documents/Resume_US.pdf' target="_blank">here</a>. </p>
+            <h2> Inverse Reinforcement Learning over MDPs</h2>
+            <p>Traditional Reinforcement Learning seeks to learn the optimal strategy to complete a mission by performing actions and learning the rewards obtained from them. The rewards function usually define the mission itself, example, the mission of reaching a particular state is captured by setting the reward at all states as -1 and the reward at goal state being zero. The goal in Inverse Reinforcement Learning(IRL) on the other hand is to learn the full reward function that defines the mission, given only the optimal policy. Unsurprisingly, given an optimal policy, the reward function may not be unique. For instance, it is easy to see that the mission of reaching state can be defined by any positive scaling of the reward function we described above and the optimal policy would be the same. </p>
+
+            <p>So in our work we discuss a sufficient and necessary condition that the reward function must satisfy. The work primarily follows the work of Ng and Russel, 'Algorithms for inverse reinforcement learning.' Our work provides some additional mathematical insights, primarily through the use of a very simple example. Our work also considers an extention of IRL to solve the problem of apprenticeship learning where we present an example where a robot aims to learn the mission of moving between two points on a grid. The reward function learnt over iterations is highlighted in the GIF to the right. A detailed read can be found <a href='documents/AE598_Project_Report.pdf' target="_blank">here</a>. The codes corresponding the the apprenticeship learning example can be found as a Python Notebook (titled IRL_from_samples.ipynb) <a href="https://github.com/vijeth27/IRL_Examples/tree/master">here</a>. </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="news">
+<!--   <section>
     <div class="container">
-      <div class="row">
-        <div class="col">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
           <div class="p-5">
-            <h3 class="display-4">News</h3>
-            <ul class="list-group">
-              <li class="list-group-item"><strong>Aug&nbsp;2023:</strong> Presented research on &#8230;</li>
-              <li class="list-group-item"><strong>Jul&nbsp;2023:</strong> Invited talk on &#8230;</li>
-            </ul>
+            <h2 class="display-4"></h2>
+            <p>More coming soon.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+
 
   <!-- Footer -->
   <footer class="py-5 bg-black">
